@@ -69,4 +69,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         blueCounter += 2;
         return false;
     }
+
+    protected void onResume() {
+        super.onResume();
+        redCounter = blueCounter = 0;
+    }
 }
