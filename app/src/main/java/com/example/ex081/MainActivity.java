@@ -11,8 +11,8 @@ import android.widget.Button;
  * @author    Ori Roitzaid <or1901 @ bs.amalnet.k12.il>
  * @version	  1
  * @since	  20/5/2023
- * Listeners project:
- * a clicks game with two buttons - one button with long click, and the other with short click.
+ * An activity of game with two buttons - one with long click, and the other with short click.
+ * Also there is a button which moves the user to the results activity.
  */
 public class MainActivity extends AppCompatActivity implements View.OnClickListener,
         View.OnLongClickListener {
@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      */
     @Override
     public boolean onLongClick(View v) {
-        blueCounter++;
+        blueCounter += 2;
         return false;
     }
 }
