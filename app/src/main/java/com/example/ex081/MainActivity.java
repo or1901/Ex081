@@ -30,15 +30,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         blueBtn = findViewById(R.id.blueBtn);
         resultsBtn = findViewById(R.id.resultBtn);
 
-        redBtn.setOnClickListener(this);
-        blueBtn.setOnLongClickListener(this);
+        redBtn.setOnLongClickListener(this);
+        blueBtn.setOnClickListener(this);
         resultsBtn.setOnClickListener(this);
 
         redCounter = blueCounter = 0;
     }
 
     /**
-     * This function updates the counter of the red button, and also moves to the next activity
+     * This function updates the counter of the blue button, and also moves to the next activity
      * when the gray button is clicked.
      * <p>
      *
@@ -46,8 +46,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      */
     @Override
     public void onClick(View v) {
-        if(v.getId() == R.id.redBtn)
-            redCounter++;
+        if(v.getId() == R.id.blueBtn)
+            blueCounter++;
         else
         {
             si = new Intent(this, ResultsActivity.class);
@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      */
     @Override
     public boolean onLongClick(View v) {
-        blueCounter += 2;
+        redCounter += 2;
         return false;
     }
 

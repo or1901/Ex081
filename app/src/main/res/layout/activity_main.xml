@@ -29,7 +29,7 @@
             android:layout_height="match_parent"
             android:layout_weight="4"
             android:backgroundTint="#E41505"
-            android:text=" Short Click"
+            android:text="Long Click"
             android:textSize="30sp" />
 
         <Space
@@ -91,7 +91,7 @@
             android:layout_height="match_parent"
             android:layout_weight="4"
             android:backgroundTint="#425AE1"
-            android:text="Long Click"
+            android:text="Short Click"
             android:textSize="30sp" />
 
         <Space
